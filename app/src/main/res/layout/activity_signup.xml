@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000024"
+    android:padding="14dp"
+    tools:context=".signup">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_layout"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/logo_cast" />
+
+            <EditText
+                android:id="@+id/txt_Email"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/autoCompleteTextView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:textColorHint="#BEBEFF"
+                android:hint="Email"
+                android:textColor="@color/white" />
+
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt_username"
+                android:inputType="textPassword"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:hint="password"
+                android:textColorHint="#BEBEFF"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_password"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="60dp"
+                android:text="Tampilkan Password"
+                android:textColor="#F9BA32" />
+            <EditText
+                android:id="@+id/txt_konfirmasi_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt_username"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#BEBEFF"
+                android:hint="   Konfirmasi password"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="60dp"
+                android:text="Tampilkan Password"
+                android:textColor="#F9BA32" />
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#FFD1E3"
+                android:text="sign up"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sp_level"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#000024"
+        android:hint="Level" />
+</RelativeLayout>

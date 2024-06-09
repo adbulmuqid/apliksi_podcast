@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_layout2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="#000024"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textNo_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNama"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="148dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/textTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNo_hp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="148dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/textwaktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTanggal"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="148dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/textdurasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:layout_below="@id/textwaktu"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="148dp"
+        android:text="TextView" />
+    </LinearLayout>
+</RelativeLayout>

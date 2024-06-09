@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "76025841319",
+    "firebase_url": "https://podcast-polije-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "podcast-polije",
+    "storage_bucket": "podcast-polije.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76025841319:android:774a7ff2d007a82e0fbd82",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBURN4Qwa4M3sR1BrhAxfbwaT-HIHkZIIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76025841319:android:6ab855bfd31ff1890fbd82",
+        "android_client_info": {
+          "package_name": "com.example.podcast2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBURN4Qwa4M3sR1BrhAxfbwaT-HIHkZIIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

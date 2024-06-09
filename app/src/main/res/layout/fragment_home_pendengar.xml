@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000024">
+
+    <!-- Slider -->
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/viewSlide2"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="900"
+        app:iss_period="900"
+        app:iss_text_align="CENTER" />
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewSlide2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="1dp"
+                android:clickable="true"
+                android:ems="10"
+                android:inputType="text"
+                android:minHeight="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="5dp"
+                android:text="Trending Topik Video"
+                android:textColor="@color/white" />
+            <!-- Recycler View 1 -->
+            <LinearLayout
+                android:id="@+id/layou1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextText"
+                android:background="#000024"
+                android:padding="5dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <!-- Trending Topik Audio -->
+            <TextView
+                android:id="@+id/editTextText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layou1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="1dp"
+                android:clickable="true"
+                android:ems="10"
+                android:inputType="text"
+                android:minHeight="15dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="5dp"
+                android:text="Trending Topik Audio"
+                android:textColor="@color/white" />
+
+            <!-- Recycler View 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextText2"
+                android:background="#000024"
+                android:padding="5dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Upload_video">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000024"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/btn_bck"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/editTexttime"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Upload Video"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginStart="45dp"
+            app:layout_constraintStart_toEndOf="@+id/btn_bck"
+            tools:layout_editor_absoluteY="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/video_view"
+        android:layout_margin="40dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Judul Video"
+        android:textColor="@color/white"
+        android:text="Judul Video"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="30dp"
+        android:id="@+id/video_name"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_pilih"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFD1E3"
+            android:text="Uplod"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/btn_upload_video"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFD1E3"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp" />
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progress_bar"
+        android:visibility="invisible"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000024"
+    tools:context=".tab_fragment.AudioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/garis_bg"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="5dp"
+            android:elevation="3dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Search Your Item Here...."
+            android:padding="13dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler6"
+            android:background="@drawable/bg_layout2"/>
+    </LinearLayout>
+
+</RelativeLayout>
